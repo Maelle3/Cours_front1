@@ -6,9 +6,15 @@
   "repository": "git@github.com:Maelle3/Cours_front1.git",
   "author": "Jeremy <jeremy.fardilha@centrale-marseille.fr>",
   "license": "MIT",
+  "scripts": {
+    "build" : "yarn run postcss -o main.css tailwind.pcss",
+    "build_windows" : ".\\node_modules\\.bin\\postcss -o main.css .\\tailwind.pcss"
+  },
   "devDependencies": {
     "postcss": "^7.0.18",
     "postcss-cli": "^6.1.3",
-    "tailwindcss": "^1.1.2"
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.1.2",
+    "@fullhuman/postcss-purgecss": "^1.3.0"
   }
 }
