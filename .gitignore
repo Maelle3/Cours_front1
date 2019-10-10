@@ -2,3 +2,4 @@
 .DS_Store
 yarn.lock
 main.css
+node_modules
